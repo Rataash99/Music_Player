@@ -8,7 +8,7 @@ A simple music player project built using only HTML and CSS. No frameworks or ex
 - [Screenshot](#screenshot)
 - [Demo](#demo)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
+- [Tech Stack](#Tech-Stack)
 - [License](#license)
 
 ## Features
@@ -34,3 +34,17 @@ To run the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/music-player-project.git
+
+## Tech Stack
+- HTML
+- CSS
+
+## Useful Links
+- [Documentation](https://example.com/documentation)
+- [Live Site URL](https://example.com/demo)
+- [GitHub Repository](https://github.com/yourusername/yourproject)
+
+## Useful Resources
+- [Google Fonts](https://fonts.google.com)
+- [Font Awesome](https://fontawesome.com)
+- [for Box Shadow](https://htmlcssfreebies.com/css-box-shadow-examples/)
