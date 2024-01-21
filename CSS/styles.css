@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+p{
+    color: rgb(151, 151, 151);
+}
+body{
+    scroll-behavior: smooth;
+    background: linear-gradient(rgb(29, 1, 59), rgb(33, 1, 49), rgb(13, 1, 48));
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: "Gurajada", sans-serif;
+}
+/* container */
+.container{
+    position: relative;
+    padding: 0rem 1rem;
+    height: auto;
+    margin: auto;
+    max-width: 70rem;
+}
+
+/* header-nav-CSS */
+.top-header{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    left: 0rem;
+    z-index: 100;
+    transition: 0.2s all ease-in-out;
+}
+nav{
+    padding: 5px 0px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  rgb(29, 1, 59) 0px 23px 26px;    
+    background-color: rgb(29, 1, 59);
+    padding-right: 4px;
+    max-width: 76rem;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+/* CSS for nav-left-part */
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.logo img{
+    width: 50px;
+}
+.app-name{
+    font-size: 14px;
+    font-family: "Monoton", sans-serif;
+    display: none;
+}
+
+/* CSS for right part of navbar */
+.nav-right-content{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+    width: 90%;
+    max-width: 15rem;
+    margin:auto;
+    right: 0;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 0;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(26, 2, 51, 0.8); 
+    transition: all 0.2s ease-in-out;
+}
+.fa-bars:hover{
+    cursor:pointer;
+}
+.search-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search-bar input{
+    padding: 8px;
+    border-radius: 5px;
+    padding-left: 2rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgba(65, 35, 118, 0.9);
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 0.44rem;
+    left: 7px;
+}
+.fa-microphone{
+    position: absolute;
+    top: 0.4rem;
+    right: 1.8rem;
+}
+.hamburg{
+    padding-right: 13px;
+    color: white;
+}
+
+.fa-xmark{
+    color: rgb(230, 187, 227);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.hidden-nav:target{
+    display: flex;
+    top: 4.5rem;
+    left: 0;
+    transition: 1s;
+}
+.profile-avatar{
+    border-radius: 50%;
+}
+
+/* main section  */
+.main-content{
+    transition: all 0.2s ease-in-out;
+
+}
+.sec-main{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* carousel-CSS */
+.carousel{
+    left: 0;
+    display: flex;
+    gap:0.5rem;
+    overflow-x: scroll;
+    height: 18rem;
+    padding: 1.5rem 0rem;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+}
+
+.carousel-img{
+    transition: all 0.3s ease-out;
+    width: 13rem;
+}
+.carousel-img:hover{
+    transform : scale(1.1);
+    box-shadow: 0px 0px 15px 2px rgb(134, 76, 154);
+}
+
+/* latest releases in left section  */
+.latest-releases{
+    flex-direction: row;
+    transition: all 0.2s ease-in-out;
+}
+
+.latest-release-content-outer-div{
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.latest-release-content{
+    max-width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.latest-release-data{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.latest-release-about{
+    display: flex;
+    flex-direction: column;
+}
+.release-date{
+    margin-top: -0.7rem;
+}
+.latest-release-dropdown{
+    display: none;
+    position: absolute;
+    right: 1.2rem;
+    top: 0.6rem;
+    flex-direction: row;
+    background-color: rgba(57, 26, 113, 0.8); 
+    border-radius: 5px;
+    padding: 0rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.lat-rel-dropdown-li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.latest-release-ellipsis:hover .latest-release-dropdown {
+    display: flex;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.lat-rel-dropdown-li p{
+    color: white;
+}
+#music-player:target{
+    display: block;
+}
+.latest-play{
+    position:relative;
+    transition: all 0.2s ease-in-out;
+
+}
+.play-btn{
+    position: absolute;
+    color: white;
+    left: 45%;
+    top: 38%;
+    display:none;
+}
+.latest-play:hover .play-btn{
+    display: block;
+}
+.latest-play:hover{
+    opacity: 0.9;
+}
+.latest-release-img{
+    transition: all 0.2s ease-in-out;
+    width: 100px;
+}
+.rating{
+    margin-top: -1rem;
+}
+.latest-release-dropdown li{
+    list-style: none;
+}
+
+/* artist part in left section  */
+.artists{
+    display: flex;
+    overflow: scroll;
+    text-align: center;
+    gap: 1rem;
+}
+.artist-play-pause{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.fa-circle-play{
+    display: none;
+    position:absolute;
+    font-size: 2rem;
+    color: white;
+    left: 38%;
+    top: 35%
+}
+.artist-play-pause:hover  {
+    opacity: 0.8;
+}
+.artist-play-pause:hover  .fa-circle-play{
+    display: block;
+}
+.artist p{
+    color: white;
+}
+.artist img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* genre part in left section  */
+.songs-genre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.stations{
+    max-width: 58.6rem;
+    overflow: scroll;
+    background-color: #180542;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1.25rem;
+    padding: 1.6rem ;
+}
+.genre-over-text{
+    position: relative;
+}
+.genre-over-text p{
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.genre-img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: -1.7rem;
+    opacity: 0.7
+}
+.genre-over-text:hover{
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+/* theme part inside genre div starts here */
+.song-theme{
+    display: flex;
+    overflow: scroll;
+    gap: 0.78rem;
+}
+.theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 10rem;
+    min-width: 19rem;
+}
+.party, .electronics, .road-trip{
+    overflow: hidden;
+}
+.theme p{
+    color: white;
+    font-size: 2rem;
+    overflow:hidden;
+}
+.theme:hover{
+    cursor: pointer;
+}
+.party::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Images/theme/02_Party-theme_Blog-banner_1280x478-1-1024x382.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.2s ease-in;
+}
+.party:hover::before{
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+
+.electronics::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Images/theme/BLOG-radio-wordpress-theme-31.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.2s ease-out;
+}
+.electronics:hover::before{
+    transform: scale(1.2);
+    opacity: 0.6
+}
+
+.road-trip::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Images/theme/If-you-have-no-plans-this-weekend-you-should-take-a-road-trip-Picture-KRBE.jpeg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+}
+.road-trip:hover::before{
+    transform: scale(1.2);
+    opacity: 0.6
+}
+
+/* css for latest songs part  */
+.latest-songs{
+    transition: 0.2s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.latest-hindi , .latest-english{
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    max-width: 100%;
+}
+.latest-english{
+    flex-direction: row-reverse;
+}
+
+.latest-img{
+    transition: all 0.2s ease-in-out;
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.latest-sec-info p{
+    transition: all 0.2s ease-in-out;
+    margin-top: -16px;
+}
+.latest-img-1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/1153508.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.latest-img-2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/6204783.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.latest-img-3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/images.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.latest-img-4::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/Morning_Blue_Ocean_Coast-HDR_Photo_HD_Wallpapers_medium.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.latest-img-5::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/Music-Random-Background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.latest-img-6::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/Images/latest/random-hd-wallpaper-preview.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* CSS for aside section starts here  */
+#aside-section{
+    transition: all 0.2s ease-in-out;
+    height: fit-content;
+    display: flex;
+}
+.queue-img{
+    position: fixed;
+    left: 18px;
+    top: 4rem;
+    z-index: 100;    
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: rgba(166, 117, 230, 0.25) 0px 50px 100px -20px, rgba(24, 47, 223, 0.3) 0px 30px 60px -30px, rgba(149, 0, 255, 0.35) 0px -2px 6px 0px inset;
+    color: white;
+    transition: all 0.2s ease-in-out;
+
+}
+.queue-img:hover{
+    cursor: pointer;
+}
+.aside-cross{
+    position: absolute;
+    right: 13px;
+    top: 11px;
+    transition: all 0.2s ease-in-out;
+}
+#aside-main{
+    width: 90%;
+    max-width: 22rem;
+    position: fixed;
+    display: none;
+    background-color: rgba(28, 3, 53, 0.8); 
+    top: 4rem;
+    border-radius: 2px;;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+}
+#aside-main:target{
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-header{
+    padding: 0px 11px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.aside-header h3{
+    display: none;
+    font-size: 1.8rem;
+    transition: 0.2s ease-in;
+}
+.queue-dropdown{
+    color:aquamarine;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.fav-n-playlist{
+    position: absolute;
+    z-index: 1000;
+    top: 2rem;
+    width: 6rem;
+    right: 0;
+    color: white;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgba(57, 26, 113, 0.8); 
+    padding: 0 0.7rem;
+    display: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.fa-angle-down:hover + .fav-n-playlist{
+    display: flex;
+}
+.queue-dropdown p{
+    color: aquamarine;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+.fa-angle-down{
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+ /* CSS for queued-songs part  */
+
+#queued-songs{
+    z-index: 100;  
+    border-radius: 3px;
+    max-height: 80vh;
+    overflow: scroll;
+    transition: all 0.2s ease-in-out;
+}
+.queued-song-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px;
+    transition: all 0.2s ease-in-out;
+}
+.queued-song-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    transition: all 0.2s ease-in-out;
+}
+.queued-song-left img{
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(181, 178, 217, 0.35) 0px 5px 15px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+}
+.queued-song-left div p{
+    margin-top: -1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* CSS for footer section music player */
+#music-player{
+    z-index: 10;
+    position: relative;
+    display: none;
+    height: 3.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.player::before{
+    box-shadow: 0px -25px 20px -20px rgba(109, 78, 140, 0.8);
+    content: "";
+    position: absolute;
+    height: 3.8rem;
+    left: -1.2rem;
+    right: -1.2rem;
+    background-color: rgba(28, 3, 53, 0.8); 
+    transition: all 0.2s ease-in-out;
+}
+.player{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.current-song-info{
+    position: relative;
+    display: none;
+    gap: 0.7rem;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.curr-song-artist{
+    height: 3.6rem;
+    transition: all 0.2s ease-in-out;
+}
+.curr-song-artist p{
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    top: 26px;
+}
+.curr-song-artist span{
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.current-song-info img{
+    width: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.curr-song-sel{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(193, 164, 250, 0.9);
+    transition: all 0.2s ease-in-out;
+  }
+audio{
+    height: 1.8rem;
+    width: 14rem;
+}
+
+
+
+
+/* utility CSS */
+.color-grey{
+    color: rgb(179, 176, 176);
+}
+.pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,220 @@
+@media screen and (min-width: 500px){
+    .carousel{
+        height: 21rem;
+    }
+    .carousel-img{
+        width: 16rem;
+    }
+    .player::before{
+        height: 3.3rem;
+    }
+    .player{
+        height: 3.3rem;
+        align-items: center;
+        gap:12px;
+    }
+    .current-song-info{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    audio{
+        height: 2.2rem;
+        width: 15rem;
+    }
+    .footer-music-controls{
+        display: flex;
+    }
+    .nav-right-content{
+        max-width: 20rem;
+    }
+    .search-bar input{
+        width: 14rem;
+    }
+    .latest-release-content-outer-div{
+        max-width: 49rem;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 1090px){
+    .main-content{
+        justify-content:space-around;
+        display: flex;
+        flex-direction: row;
+        margin:auto;
+        gap: 0.5rem;
+    }
+    .sec-main{
+        max-width: 64vw;
+    }
+    
+    /* css for header  */
+    .top-header{
+        z-index: 1000;
+    }
+    .logo{
+        gap:15px;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .app-name{
+        display: block;
+    }
+    .hamburg{
+        display: none;
+    }
+    .header-cross{
+        display: none;
+    }
+    .nav-right-content{
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        padding-right: 13px;
+        gap: 2rem;
+        position: static;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        max-width: 100%
+    }
+    .hidden-nav{
+        top: 0;
+    }
+    .search-bar{
+        gap: 1.2rem;
+    }
+    .fa-microphone{
+        right: 2.8rem;
+        top: 0.54rem;
+    }
+    .fa-magnifying-glass{
+        top: 0.54rem;
+        left: 8px;
+    }
+    .search-bar input{
+        height: 2rem;
+        width: 18rem;
+    }
+    .fa-bell{
+        font-size: 1.4rem;
+    }
+    .profile-avatar{
+        margin-top: 0.5rem;
+        width: 2.9rem;
+    }
+    .artists img{
+        width:9rem;
+    }
+    .stations{
+        gap: 1.6rem;
+    }
+
+    /* css for aside section  */
+    .aside-toggle{
+        display:none;
+    }
+    .aside-cross{
+        display: none;
+    }
+    #aside-main{
+        max-height: 90vh;
+        position:static;
+        margin-top: 8rem;
+        display: flex;
+        width: 18rem;
+        max-width: 28rem;
+        flex-direction: column;
+    }
+    .aside-header{
+        justify-content: space-between;
+    }
+    .aside-header h3{
+        display: block;
+    }
+    #queued-songs{
+        max-height: 88vh;
+        overflow: scroll;
+    }
+
+}
+@media screen and (min-width: 1300px) {
+    .main-content{
+        max-width: 85vw;
+        margin:auto;
+    }
+    
+    html{
+        font-size: 20px;
+    }
+    nav{
+        padding: 0rem 3rem;
+    }
+    /* css for main div  */
+    .carousel{
+        max-width: 49.2rem;
+        height: 21.5rem;
+    }
+    .carousel-img{
+        width: 16rem;
+    }
+    .carousel-img:hover{
+        transform: scale(1.2)
+    }
+    
+    /* css for latest releases in left section  */
+    
+    /* artists section in left section  */
+    .artists{
+        
+        max-width: 49.1rem;
+        gap: 1.29rem;
+    }
+    .artist img{
+        width: 176px;
+    }
+
+    /* stations part in left section  */
+    .stations{
+       padding: 1rem;
+       gap:1.6rem;
+       max-width: 49.15rem;
+    }
+    .genre-img{
+        width: 130px;
+        height: 130px;
+    }
+    .genre-over-text p{
+        top: 29%;
+    }
+
+    /* theme part inside genre div starts here */
+    .theme{
+        min-width: 15.86rem;
+    }
+
+    /* css for latest songs part  */
+    .latest-hindi , .latest-english{
+        max-width: 49.3rem;
+    }
+    .latest-img{
+        width: 8.97rem;
+    }
+
+    /* css for aside section  */
+    #aside-main{
+        top: 5rem;
+    }
+    .queue-img{
+        top: 5rem;
+    }
+
+    /* css for footer  */
+    .player{
+        gap: 3rem;
+    }
+   
+}
