@@ -33,7 +33,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/music-player-project.git
+   git clone https://github.com/Rataash99/Music_Player
 
 ## Tech Stack
 - HTML
@@ -41,8 +41,8 @@ To run the project locally, follow these steps:
 
 ## Useful Links
 - [Documentation](https://example.com/documentation)
-- [Live Site URL](https://example.com/demo)
-- [GitHub Repository](https://github.com/yourusername/yourproject)
+- [Live Site URL](https://music-player-56f369.netlify.app)
+- [GitHub Repository](https://github.com/Rataash99/Music_Player)
 
 ## Useful Resources
 - [Google Fonts](https://fonts.google.com)
