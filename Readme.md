@@ -40,7 +40,6 @@ To run the project locally, follow these steps:
 - CSS
 
 ## Useful Links
-- [Documentation](https://example.com/documentation)
 - [Live Site URL](https://music-player-56f369.netlify.app)
 - [GitHub Repository](https://github.com/Rataash99/Music_Player)
 
