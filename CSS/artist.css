@@ -8,6 +8,16 @@
 .container{
     height: auto;
 }
+.go-back{
+    border: 2px solid red;
+    position: relative;
+}
+.fa-arrow-left{
+    position: absolute;
+    color: rgb(212, 185, 233);
+    top: 7rem;
+    left: 6px;
+}
 
 .artist-about{
     display: flex;
